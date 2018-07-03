@@ -1,0 +1,2177 @@
+[18-Apr-2018 13:07:01 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'u756324097_yasi'@'10.2.1.46' (using password: YES)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u756324097_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(58): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[28000] [1045] Access denied for user 'u756324097_yasi'@'10.2.1.46' (using password: YES)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(58): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/apple-icon-57x57.png' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('apple-icon-57x5...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/apple-icon...', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',
+    'HTTP_X_FORWARDED_FOR' => '87.250.224.37',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '87.250.224.37',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'HTTP_FROM' => 'support@search.yandex.ru',
+    'REDIRECT_UNIQUE_ID' => 'WtdC9X8AAAEAAT26NP8AAAAR',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WtdC9X8AAAEAAT26NP8AAAAR',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '87.250.224.37',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '51393',
+    'REDIRECT_URL' => '/apple-icon-57x57.png',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/apple-icon-57x57.png',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524056821.2356369495391845703125,
+    'REQUEST_TIME' => 1524056821,
+]
+[18-Apr-2018 18:37:50 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "banketnoe-menyu/medalony-iz-vyrezki-telyatiny".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('banketnoe-menyu...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQfn8AAAEADmQolB0AAAAQ',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQfn8AAAEADmQolB0AAAAQ',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '63684',
+    'REDIRECT_URL' => '/banketnoe-menyu/medalony-iz-vyrezki-telyatiny',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/banketnoe-menyu/medalony-iz-vyrezki-telyatiny',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076670.3496620655059814453125,
+    'REQUEST_TIME' => 1524076670,
+]
+[18-Apr-2018 18:37:50 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "component/jshopping/category/view/67".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('component/jshop...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQfn8AAAEADl6KiAkAAAAU',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQfn8AAAEADl6KiAkAAAAU',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '63651',
+    'REDIRECT_QUERY_STRING' => 'Itemid=0',
+    'REDIRECT_URL' => '/component/jshopping/category/view/67',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'Itemid=0',
+    'REQUEST_URI' => '/component/jshopping/category/view/67?Itemid=0',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076670.07672405242919921875,
+    'REQUEST_TIME' => 1524076670,
+]
+[18-Apr-2018 18:37:50 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/salat' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('salat', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/salat', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQfn8AAAEADlAxaA4AAAAF',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQfn8AAAEADlAxaA4AAAAF',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '63665',
+    'REDIRECT_QUERY_STRING' => 'start=12',
+    'REDIRECT_URL' => '/salat',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'start=12',
+    'REQUEST_URI' => '/salat?start=12',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076670.1432869434356689453125,
+    'REQUEST_TIME' => 1524076670,
+]
+[18-Apr-2018 18:37:50 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sushi/tobiko".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('sushi/tobiko', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQfn8AAAEADl5fhuIAAAAK',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQfn8AAAEADl5fhuIAAAAK',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '63683',
+    'REDIRECT_URL' => '/sushi/tobiko',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/sushi/tobiko',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076670.38729095458984375,
+    'REQUEST_TIME' => 1524076670,
+]
+[18-Apr-2018 18:37:50 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rolly-assorti/fudzi".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rolly-assorti/f...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQfn8AAAEADlH5axwAAAAH',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQfn8AAAEADlH5axwAAAAH',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '63682',
+    'REDIRECT_URL' => '/rolly-assorti/fudzi',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/rolly-assorti/fudzi',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076670.333672046661376953125,
+    'REQUEST_TIME' => 1524076670,
+]
+[18-Apr-2018 18:37:52 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "component/jshopping/vino-frantsiya/ladore-medok-krasnoe".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('component/jshop...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQgH8AAAEADmQ8lEsAAAAW',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQgH8AAAEADmQ8lEsAAAAW',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '64196',
+    'REDIRECT_QUERY_STRING' => 'Itemid=0',
+    'REDIRECT_URL' => '/component/jshopping/vino-frantsiya/ladore-medok-krasnoe',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'Itemid=0',
+    'REQUEST_URI' => '/component/jshopping/vino-frantsiya/ladore-medok-krasnoe?Itemid=0',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076672.675468921661376953125,
+    'REQUEST_TIME' => 1524076672,
+]
+[18-Apr-2018 18:37:52 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rolly/rojs".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rolly/rojs', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQgH8AAAEADl6Jh2kAAAAS',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQgH8AAAEADl6Jh2kAAAAS',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '64198',
+    'REDIRECT_URL' => '/rolly/rojs',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/rolly/rojs',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076672.7019751071929931640625,
+    'REQUEST_TIME' => 1524076672,
+]
+[18-Apr-2018 18:37:53 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/goryachie-zakuski' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('goryachie-zakus...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/goryachie-...', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQgX8AAAEADl6Ih-kAAAAR',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQgX8AAAEADl6Ih-kAAAAR',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '64205',
+    'REDIRECT_QUERY_STRING' => 'start=12',
+    'REDIRECT_URL' => '/goryachie-zakuski',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'start=12',
+    'REQUEST_URI' => '/goryachie-zakuski?start=12',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076673.1225759983062744140625,
+    'REQUEST_TIME' => 1524076673,
+]
+[18-Apr-2018 18:37:53 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "component/jshopping/shot-drink/kubinskij-negroni".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('component/jshop...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQgH8AAAEADjnxLKMAAAAE',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQgH8AAAEADjnxLKMAAAAE',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '64201',
+    'REDIRECT_QUERY_STRING' => 'Itemid=0',
+    'REDIRECT_URL' => '/component/jshopping/shot-drink/kubinskij-negroni',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'Itemid=0',
+    'REQUEST_URI' => '/component/jshopping/shot-drink/kubinskij-negroni?Itemid=0',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076672.9991691112518310546875,
+    'REQUEST_TIME' => 1524076672,
+]
+[18-Apr-2018 18:37:53 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rolly/delyuks".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rolly/delyuks', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteQgH8AAAEADmSalRsAAAAY',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteQgH8AAAEADmSalRsAAAAY',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '64203',
+    'REDIRECT_URL' => '/rolly/delyuks',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/rolly/delyuks',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524076673.04559993743896484375,
+    'REQUEST_TIME' => 1524076673,
+]
+[18-Apr-2018 18:46:30 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/goryachie-zakuski' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('goryachie-zakus...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/goryachie-...', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteShn8AAAEADrhDZwsAAAAG',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteShn8AAAEADrhDZwsAAAAG',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '57771',
+    'REDIRECT_URL' => '/goryachie-zakuski',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/goryachie-zakuski',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077190.927156925201416015625,
+    'REQUEST_TIME' => 1524077190,
+]
+[18-Apr-2018 18:46:36 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: news/10-news' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('10-news', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('news/10-news', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteSi38AAAEADlAxal4AAAAF',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteSi38AAAEADlAxal4AAAAF',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '58964',
+    'REDIRECT_URL' => '/news/10-news',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/news/10-news',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077195.8870990276336669921875,
+    'REQUEST_TIME' => 1524077195,
+]
+[18-Apr-2018 18:46:36 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/rolly' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('rolly', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/rolly', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteSi38AAAEADl6KiXEAAAAU',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteSi38AAAEADl6KiXEAAAAU',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '58965',
+    'REDIRECT_QUERY_STRING' => 'start=36',
+    'REDIRECT_URL' => '/rolly',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'start=36',
+    'REQUEST_URI' => '/rolly?start=36',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077195.864120960235595703125,
+    'REQUEST_TIME' => 1524077195,
+]
+[18-Apr-2018 18:46:36 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/goryachie-blyuda-iz-myasa' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('goryachie-blyud...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/goryachie-...', Array)
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteSi38AAAEADmihorQAAAAh',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteSi38AAAEADmihorQAAAAh',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '58970',
+    'REDIRECT_QUERY_STRING' => 'start=12',
+    'REDIRECT_URL' => '/goryachie-blyuda-iz-myasa',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'start=12',
+    'REQUEST_URI' => '/goryachie-blyuda-iz-myasa?start=12',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077195.9351079463958740234375,
+    'REQUEST_TIME' => 1524077195,
+]
+[18-Apr-2018 18:46:36 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "component/jshopping/vino-frantsiya/pti-shabli-rolan-lavantyuro-beloe".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('component/jshop...', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteSi38AAAEADrhhaKIAAAAL',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteSi38AAAEADrhhaKIAAAAL',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '58959',
+    'REDIRECT_QUERY_STRING' => 'Itemid=0',
+    'REDIRECT_URL' => '/component/jshopping/vino-frantsiya/pti-shabli-rolan-lavantyuro-beloe',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'Itemid=0',
+    'REQUEST_URI' => '/component/jshopping/vino-frantsiya/pti-shabli-rolan-lavantyuro-beloe?Itemid=0',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077195.930078983306884765625,
+    'REQUEST_TIME' => 1524077195,
+]
+[18-Apr-2018 18:46:36 UTC] An Error occurred while handling another error:
+exception 'PDOException' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=mysq...', 'u587568225_yasi', 'H]mar3SjVasC+JV...', NULL)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#12 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#13 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#17 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#22 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#24 [internal function]: yii\web\ErrorAction->run()
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#28 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#29 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#30 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#31 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000] [1226] User 'u587568225_yasi' has exceeded the 'max_user_connections' resource (current value: 15)' in /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('1')
+#4 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('1')
+#5 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /home/u587568225/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#10 /home/u587568225/public_html/components/CategoryWidget.php(37): yii\db\ActiveQuery->all()
+#11 [internal function]: app\components\CategoryWidget->app\components\{closure}(Object(yii\db\Connection))
+#12 /home/u587568225/public_html/vendor/yiisoft/yii2/db/Connection.php(462): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /home/u587568225/public_html/components/CategoryWidget.php(39): yii\db\Connection->cache(Object(Closure))
+#14 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Widget.php(140): app\components\CategoryWidget->run()
+#15 /home/u587568225/public_html/views/layouts/main.php(75): yii\base\Widget::widget(Array)
+#16 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(332): require('/home/u58756822...')
+#17 /home/u587568225/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/u58756822...', Array)
+#18 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/u58756822...', Array, Object(app\controllers\SiteController))
+#19 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="inn...')
+#20 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#21 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/u587568225/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#27 /home/u587568225/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#29 {main}
+Additional Information:
+
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rolly/drakon".' in /home/u587568225/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('rolly/drakon', Array)
+#1 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /home/u587568225/public_html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/u587568225/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/u587568225/public_html/web/index.php(14): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'vosvojasi.ru',
+    'HTTP_X_FORWARDED_FOR' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_REAL_IP' => '144.76.26.99',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_PORT' => '80',
+    'HTTP_X_USERNAME' => 'u587568225',
+    'HTTP_X_ORDER_ID' => '28025126',
+    'HTTP_X_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_UNIQUE_ID' => 'WteSi38AAAEADl6IixYAAAAR',
+    'REDIRECT_PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WteSi38AAAEADl6IixYAAAAR',
+    'PHP_DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'DOCUMENT_ROOT' => '/home/u587568225/public_html',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'vosvojasi.ru',
+    'SERVER_ADDR' => '31.220.16.220',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '144.76.26.99',
+    'SERVER_ADMIN' => 'support@hostinger.com',
+    'SCRIPT_FILENAME' => '/home/u587568225/public_html/web/index.php',
+    'REMOTE_PORT' => '58955',
+    'REDIRECT_URL' => '/rolly/drakon',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/rolly/drakon',
+    'SCRIPT_NAME' => '/web/index.php',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1524077195.9448089599609375,
+    'REQUEST_TIME' => 1524077195,
+]
