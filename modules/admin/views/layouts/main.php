@@ -41,15 +41,11 @@ AdminAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Главная', 'url' => ['/admin/']],
-                ['label' => 'Новости', 'url' => ['/admin/news']],
-                ['label' => 'Слайдер', 'url' => ['/admin/slides']],
-                ['label' => 'Настройки магазина', 'url' => ['/admin/default/options']],
-                ['label' => 'Товары', 'url' => ['/admin/product']],
-                ['label' => 'Категории', 'url' => ['/admin/category']],
-                ['label' => 'Пользователи', 'url' => ['/rbac/default/index']],
-                ['label' => 'Заказы('.OrderCountWidget::widget().')', 'url' => ['/admin/orders']],
-                ['label' => "Отзывы(".RevCountWidget::widget().")", 'url' => ['/admin/review']],
+                ['label' => 'Главная', 'url' => ['/admin/default/index']],
+                ['label' => 'Новости', 'url' => ['/admin/news/index']],
+                ['label' => 'Слайдер', 'url' => ['/admin/slides/index']],
+                ['label' => 'Галлереи', 'url' => ['/admin/gallery/index']],
+                ['label' => 'Занятия','url' => ['/admin/aducate/index']],
                 Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
                 ) : (

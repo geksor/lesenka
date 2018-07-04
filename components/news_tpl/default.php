@@ -21,7 +21,7 @@
                 </p>
                 <div class="dateLinkWrap flex justify-content-between">
                     <div class="publishDate"><?=$item['pub_date']?></div>
-                    <a href="/news/show?id=<?=$item['id']?>">Подробнее →</a>
+                    <a href="/news/#<?=$item['alias']?>">Подробнее →</a>
                 </div>
             </article>
         </div>

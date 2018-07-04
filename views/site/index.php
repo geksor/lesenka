@@ -1,5 +1,6 @@
 <?
 use app\components\NewsWidget;
+use app\components\AducateWidget;
 ?>
  <div class="slideLine">
         <div class="container">
@@ -110,7 +111,7 @@ use app\components\NewsWidget;
                             error sit voluptatem accusantium doloremque laudantium
                         </p>
                         <div class="linkWrap flex justify-content-end">
-                            <a href="#" class="shortAbout__moreLink flex justify-content-center align-items-center">Подробнее →</a>
+                            <a href="/about" class="shortAbout__moreLink flex justify-content-center align-items-center">Подробнее →</a>
                         </div>
                     </article>
                 </div>
@@ -149,170 +150,7 @@ use app\components\NewsWidget;
         <div class="bgndBlock"></div>
         <div class="container">
             <h2 class="program__title">Программы детского развития и не только</h2>
-            <div class="program__wrap row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/13.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Мини-сад с питанием</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/14.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Комплексные развивающие занятия </p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/15.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Подготовка к школе</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/16.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">ВПР</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/17.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Скорочтение</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/18.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Английский язык</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/19.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Робототехника</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/20.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Шахматы</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/21.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Вокальный ансамбль</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/22.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Художественная мастерская</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/23.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Продлёнка с питанием</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/24.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Музыкальная развивайка</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/25.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Танцы</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/26.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Логопед</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/27.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Психолог</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/28.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Фитнес «Мама + малыш»</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/29.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Фитнес для мам</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="program__block relative">
-                        <a href="#" class="absolute_100prc"></a>
-                        <div class="imgWrap" style="background-image: url('images/30.jpg')">
-                            <div class="padding"></div>
-                        </div>
-                        <p class="title">Театральная студия</p>
-                    </div>
-                </div>
-            </div>
+            <?=AducateWidget::widget()?>
         </div>
     </div>
     <div class="callbackLine">

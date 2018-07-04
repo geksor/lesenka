@@ -13,16 +13,13 @@ class NewsController extends AppController
     public function actionIndex(){
         $this->setMetaTags('Новости','Новости');
         $news = News::find()
-            ->select('id,name,full_text,image,pub_date')
+            ->select('id,name,full_text,image,pub_date,alias')
             ->where(['pub_status' => true]);
-            $pages = new Pagination(['totalCount' => $news->count(), 'pageSize' => 5, 'forcePageParam' => false, 'pageSizeParam' => false]);
             $data = $news
-            ->offset($pages->offset)
-            ->limit($pages->limit)
             ->orderBy(['id'=>SORT_DESC])
             ->asArray()
             ->all();
-        return $this->render('allnews',['news' => $data,'pages' => $pages]);
+        return $this->render('allnews',['news' => $data,]);
     }
     public function actionShow(){
         $id = Yii::$app->request->get('id');

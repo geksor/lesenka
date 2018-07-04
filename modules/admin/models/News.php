@@ -40,6 +40,7 @@ class News extends AdminActiveRecord
             [['pub_status'], 'integer'],
             ['imageFile', 'image', 'extensions' => ['png', 'jpg'], 'maxSize' => 1024 * 1024 * 1],
             [['crop_info'], 'safe'],
+            [['alias'], 'unique'],
         ];
     }
 
@@ -51,6 +52,7 @@ class News extends AdminActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
+            'alias' => 'Alias',
             'preview' => 'Preview',
             'full_text' => 'Full Text',
             'meta_description' => 'Meta Description',

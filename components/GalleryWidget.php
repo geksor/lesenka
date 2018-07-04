@@ -13,6 +13,9 @@ class GalleryWidget extends Widget
     public function run()
     {
         $gallery = Gallery::findOne($this->gallId);
-        include 'gallery_tpl/default.php';
+        if($gallery) {
+            $gallery->images = json_decode($gallery->images, true);
+            include 'gallery_tpl/default.php';
+        }
     }
 }

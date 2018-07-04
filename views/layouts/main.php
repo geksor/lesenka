@@ -85,7 +85,7 @@ AppAsset::register($this);
                     <div class="header__logoWrap col-9 col-sm-5 col-md-6 col-lg-3 col-xl-4">
                         <div class="row relative justify-content-center justify-content-xl-start">
                             <div class="logo col-4 col-md-4 col-lg-5 col-xl-4">
-                                <img src="images/logo_lesenka.png" alt="logo">
+                                <img src="/images/logo_lesenka.png" alt="logo">
                             </div>
                             <div class="col-12 col-md-8 col-lg-12 col-xl-8 align-self-center flex justify-content-center justify-content-md-start justify-content-lg-center justify-content-xl-start">
                                 <h1 class="logoText">
@@ -100,8 +100,8 @@ AppAsset::register($this);
                         <?=Nav::widget([
                             'options' => ['class' => 'row'],
                             'items' => [
-                                ['label' => 'Занятия', 'url' => ['/site/index']],
-                                ['label' => 'События', 'url' => ['/site/#']],
+                                ['label' => 'Занятия', 'url' => ['/aducate/index']],
+                                ['label' => 'Расписание', 'url' => ['/site/#']],
                                 ['label' => 'Новости', 'url' => ['/news/index']],
                                 ['label' => 'О нас', 'url' => ['/site/about']],
                                 ['label' => 'Контакты', 'url' => ['/site/contact']],
@@ -135,7 +135,7 @@ AppAsset::register($this);
                 <div class="footer__logoWrap col-9 col-sm-5 col-md-6 col-lg-4">
                     <div class="row relative justify-content-center justify-content-md-start">
                         <div class="logo col-5 col-md-4">
-                            <img src="images/logo_lesenka.png" alt="logo">
+                            <img src="/images/logo_lesenka.png" alt="logo">
                         </div>
                         <div class="col-12 col-md-8 align-self-center flex justify-content-center justify-content-md-start">
                             <h1 class="logoText footer__logoText">
@@ -150,8 +150,8 @@ AppAsset::register($this);
                     <?=Nav::widget([
                         'options' => ['class' => ''],
                         'items' => [
-                            ['label' => 'Занятия', 'url' => ['/site/index']],
-                            ['label' => 'События', 'url' => ['/site/#']],
+                            ['label' => 'Занятия', 'url' => ['/aducate/index']],
+                            ['label' => 'Расписание', 'url' => ['/site/#']],
                             ['label' => 'Новости', 'url' => ['/news/index']],
                             ['label' => 'О нас', 'url' => ['/site/about']],
                             ['label' => 'Контакты', 'url' => ['/site/contact']],

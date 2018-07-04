@@ -36,29 +36,6 @@ $this->params['breadcrumbs'][] = 'О нас';
         </p>
     </div>
     <div class="about__image row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="about__imgWrap"></div>
-        </div>
+        <?=GalleryWidget::widget(['gallId' => 1])?>
     </div>
 </article>

@@ -15,6 +15,8 @@ use bupy7\cropbox\CropboxWidget;
 
     <?= $form->field($model, 'name')->textarea(['rows' => 2]) ?>
 
+    <?= $form->field($model, 'alias')->textarea(['rows' => 2]) ?>
+
     <?= $form->field($model, 'preview')->textarea(['rows' => 6]) ?>
 
     <?if($model->image):?>

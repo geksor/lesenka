@@ -18,7 +18,7 @@
     <h2 class="pageTitle">Новости</h2>
     <?if($news):?>
         <?foreach ($news as $item){?>
-            <article class="newsWrap row">
+            <article class="newsWrap row" id="<?=$item['alias']?>">
             <div class="news__img col-12 col-md-4">
                 <div class="row">
                     <div class="col-12">
@@ -36,18 +36,4 @@
         </article>
         <?}?>
     <?endif;?>
-    <div class="products_pagination">
-        <?=LinkPager::widget([
-            'pagination' => $pages,
-            'options' => [
-                'class' => 'pagination_site',
-            ],
-            'hideOnSinglePage' => true,
-            'prevPageCssClass' => 'change_page',
-            'nextPageCssClass' => 'change_page',
-            'prevPageLabel' => "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>",
-            'nextPageLabel' => "<i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>",
-            'maxButtonCount' => 5,
-        ]);?>
-    </div>
 </div>

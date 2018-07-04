@@ -28,7 +28,7 @@ class NewsWidget extends Widget
     public function run()
     {
         $news = News::find()
-            ->select('id,name,preview,image,pub_date')
+            ->select('id,name,preview,image,pub_date,alias')
             ->where(['pub_status' => true]);
         if(isset($this->limit)){
             $news = $news->limit($this->limit);

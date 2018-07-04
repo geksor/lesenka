@@ -1,8 +1,5 @@
-<?php
-if($gallery->items){
-    foreach ($gallery->items as $item):?>
-        <a data-fancybox="gallery" data-caption="<?=$item['description']?>" href="/images/photogall/<?=$item['big_img']?>">
-            <img src="/images/photogall/min/<?=$item['prew_img']?>" alt="<?=$item['name']?>">
-        </a>
-    <?endforeach;?>
-<?}?>
+<?foreach ($gallery->images as $image):?>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="about__imgWrap" style="background: url('<?='/'.Yii::getAlias('@gall_images').'/'.$image?>') no-repeat top center/cover"></div>
+</div>
+<?endforeach;?>
