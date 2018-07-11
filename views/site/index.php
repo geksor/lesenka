@@ -1,6 +1,7 @@
 <?
 use app\components\NewsWidget;
 use app\components\AducateWidget;
+use app\components\TeachersWidget;
 ?>
  <div class="slideLine">
         <div class="container">
@@ -171,48 +172,7 @@ use app\components\AducateWidget;
         <div class="bgndBlock"></div>
         <div class="container">
             <h2 class="teacher__title">Педагоги нашего центра</h2>
-            <div class="row justify-content-between">
-                <div class="col-12 col-sm-6 col-lg-3 flex justify-content-center justify-content-md-start">
-                    <div class="teacher__block col-9">
-                        <div class="imgWrap red" style="background-image: url('images/33.jpg');"></div>
-                        <p class="name">
-                            <span>Семёнова</span><br>
-                            Екатерина Владимировна
-                        </p>
-                        <p class="job">(педагог)</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 flex justify-content-center justify-content-md-start">
-                    <div class="teacher__block col-9">
-                        <div class="imgWrap green" style="background-image: url('images/33.jpg');"></div>
-                        <p class="name">
-                            <span>Семёнова</span><br>
-                            Екатерина Владимировна
-                        </p>
-                        <p class="job">(педагог)</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 flex justify-content-center justify-content-md-start">
-                    <div class="teacher__block col-9">
-                        <div class="imgWrap yellow" style="background-image: url('images/33.jpg');"></div>
-                        <p class="name">
-                            <span>Семёнова</span><br>
-                            Екатерина Владимировна
-                        </p>
-                        <p class="job">(педагог)</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 flex justify-content-center justify-content-md-start">
-                    <div class="teacher__block col-9">
-                        <div class="imgWrap blue" style="background-image: url('images/33.jpg');"></div>
-                        <p class="name">
-                            <span>Семёнова</span><br>
-                            Екатерина Владимировна
-                        </p>
-                        <p class="job">(педагог)</p>
-                    </div>
-                </div>
-            </div>
+            <?=TeachersWidget::widget()?>
         </div>
     </div>
     <div class="newsLine">

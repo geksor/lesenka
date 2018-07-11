@@ -1210,7 +1210,7 @@ html {
 .justify-content-end, .newsNavWrap {
   justify-content: flex-end !important; }
 
-.justify-content-center, .bottomLineLinkButton, .popUp_form .selectWrap:after, .table__secondCol, .table__colContent, .table__colContent p, .tableWrap .course__selectWrap:after {
+.justify-content-center, .bottomLineLinkButton, .popUp_form .selectWrap:after, #mess_block, .table__secondCol, .table__colContent, .table__colContent p, .tableWrap .course__selectWrap:after {
   justify-content: center !important; }
 
 .justify-content-between {
@@ -3452,6 +3452,20 @@ body {
         margin-bottom: 20px;
         padding-left: 10px; }
 
+.form-group {
+  position: relative; }
+  .form-group.has-error .site_input {
+    color: #f8160f;
+    border-color: #f8160f; }
+    .form-group.has-error .site_input::placeholder {
+      color: #f8160f; }
+  .form-group .help-block {
+    font-size: 12px;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    color: #f8160f; }
+
 .btn-hamburger {
   display: none;
   max-width: 48px;
@@ -3471,7 +3485,7 @@ body {
   height: 100%; }
 
 .slideout-menu {
-  background-color: #316d2f;
+  background-color: #6bc9f2;
   position: fixed;
   left: 0;
   top: 0;

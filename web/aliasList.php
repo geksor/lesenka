@@ -5,3 +5,4 @@
     Yii::setAlias('@news_images', 'images/news');
     Yii::setAlias('@aduc_images', 'images/aducate');
     Yii::setAlias('@gall_images', 'images/gallery');
+    Yii::setAlias('@teach_images', 'images/teachers');

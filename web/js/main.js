@@ -15,7 +15,7 @@ var agreeAdres = '';
     agre.addAdres(agreeAdres);
     var checkbox;
 
-    $('.form_check').on('click', function () {
+    $(document).on('click','.form_check', function () {
         if ($('div').is('#agre')) {
             $('#agre').remove()
         }
@@ -24,7 +24,7 @@ var agreeAdres = '';
         checkbox = id;
     });
 
-    $form.on('click', '.btn_agre', function (e) {
+    $(document).on('click', '.btn_agre', function (e) {
         e.preventDefault();
         var id = $(this).attr('id');
         var check;
@@ -50,7 +50,7 @@ var agreeAdres = '';
         $('.page').addClass('panel-open');
         return false;
     });
-    $('.close').on('click', function () {
+    $(document).on('click','.close', function () {
         $closeForm.css('display', 'none');
         $('.page').removeClass('panel-open')
     });
@@ -91,9 +91,6 @@ var agreeAdres = '';
                 } else if (close) {
                     $popUpBtn.trigger('click');
                 }
-                $('#mess').html(data.mess);
-                $('#mess_block').css('display', 'flex');
-                $('.page').addClass('panel-open')
             }
         })
     };
@@ -108,10 +105,27 @@ var agreeAdres = '';
         popup = true;
     }
 
-    $form.on('submit', function (event) {
-        event.preventDefault();
-        id = $(this).find('.btn_form').data('id');
-        close = !!($(this).find('.btn_form').data('close'));
+    $('.formWrap').on('pjax:complete', function() {
+        $('#mess').html('Ваше сообщение отправлено');
+        $('#mess_block').css('display', 'flex');
+        $('.page').addClass('panel-open')
+    });
+    $('.order_form_wrapper').on('pjax:complete', function() {
+        $('#mess').html('Ваша заявка принята, ожидайте звонка');
+        $('#mess_block').css('display', 'flex');
+    });
+    $('.subscription_form_wrapper').on('pjax:complete', function() {
+        $('#mess').html('Заявка на абонемент принята, ожидайте звонка');
+        $('#mess_block').css('display', 'flex');
+    });
+    $('.call_back_form_wrapper').on('pjax:complete', function() {
+        $('#mess').html('Ваша заявка принята, ожидайте звонка');
+        $('#mess_block').css('display', 'flex');
+    });
+
+    $(document).on('click','.btn_form', function (event) {
+        id = $(this).data('id');
+        close = !!($(this).data('close'));
         checkbox = id;
 
         if ($(checkbox + ' ' + '.form_check').prop('checked')) {
@@ -120,7 +134,7 @@ var agreeAdres = '';
             } else {
                 popup = false;
             }
-            $(this).runAjax();
+
         }
         else {
             agre.render(id);
@@ -129,19 +143,18 @@ var agreeAdres = '';
                 $(this).removeClass('preSubmit');
                 $(checkbox + ' ' + '.form_check').prop('checked', true);
                 if (close) closeForm();
-                $(id + '_form').runAjax();
             })
         }
     });
-
-    $('.formStandart').on('submit', function (event) {
-        event.preventDefault();
-        close = !!($(this).find('.btn_form').data('close'));
-        load = true;
-        popup = false;
-        form_data = $(this).serialize();
-        $(this).runAjax();
-    });
+    //
+    // $('.formStandart').on('submit', function (event) {
+    //     event.preventDefault();
+    //     close = !!($(this).find('.btn_form').data('close'));
+    //     load = true;
+    //     popup = false;
+    //     form_data = $(this).serialize();
+    //     $(this).runAjax();
+    // });
 
     $('#ok').click(function () {
         $('#mess_block').css('display', 'none');

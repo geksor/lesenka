@@ -1,5 +1,9 @@
 <?
 use yii\widgets\Breadcrumbs;
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+use yii\widgets\Pjax;
+
 $this->params['breadcrumbs'][] = 'Контакты';
 ?>
 <div class="breadcrumbLine">
@@ -18,47 +22,54 @@ $this->params['breadcrumbs'][] = 'Контакты';
     <h2 class="pageTitle contactPage__title">Контакты</h2>
     <div class="contactPage__mainRow row">
         <div class="formWrap col-12 col-lg-7 col-xl-8">
-            <form id="contactPage_form" class="form form_contactPage flex flex-column align-items-center">
-                <h3 class="form__title">Ждём Ваших пожеланий, замечаний и претензий!</h3>
-                <div class="form__inner row">
-                    <div class="col-12 col-sm-6">
-                        <input name="NAME" type="text" placeholder="Ваше имя" class="clear input" required>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input name="E-MAIL" type="email" placeholder="E-mail" class="clear input" required>
-                    </div>
-                    <div class="col-12">
-                                <textarea name="SEND" placeholder="Текст сообщения..."
-                                          class="clear textArea col-12"></textarea>
-                    </div>
-                    <input name="contactPage" type="hidden" value="true">
-                    <div id="contactPage" class="agre_wrap col-12">
-                        <label class="agre_lable flex">
-                                    <span class="check_wrap">
-                                        <input checked="checked" type="checkbox" value="Y" class="form_check"
-                                               data-id="#contactPage" style="display: none">
-                                        <em class="check_mask flex justify-content-center align-items-center">
-                                            <svg class="checkedImg" xmlns="http://www.w3.org/2000/svg"
-                                                 viewBox="0 0 512 512">
-                                                <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
-                                            </svg>
-                                        </em>
-                                    </span>
-                            <a class="check_text">
-                                Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
-                                персональных данных, в соответствии с Федеральным законом от 27.07.2006
-                                года №152-ФЗ «О персональных данных», на условиях и для
-                                целей, определенных в Согласии на обработку персональных данных
-                            </a>
-                        </label>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn_form" data-id="#contactPage" data-close="true">
-                            Отправить
-                        </button>
-                    </div>
+            <?Pjax::begin();?>
+            <?$form = ActiveForm::begin([
+                'id' => 'contactPage_form',
+                'options' => ['class' => 'form form_contactPage flex flex-column align-items-center','data' => ['pjax' => true]]
+            ])?>
+            <h3 class="form__title">Ждём Ваших пожеланий, замечаний и претензий!</h3>
+            <div class="form__inner row">
+
+                <div class="col-12 col-sm-6">
+                    <?= $form->field($model,'name')->textInput(['class' => 'clear input site_input','placeholder' => 'Ваше имя*'])->label(false)?>
                 </div>
-            </form>
+
+                <div class="col-12 col-sm-6">
+                    <?= $form->field($model,'email')->textInput(['class' => 'clear input site_input','placeholder' => 'E-mail*'])->label(false)?>
+                </div>
+                <div class="col-12">
+                    <?= $form->field($model,'text')->textarea(['class' => 'clear textArea col-12 site_input','placeholder' => 'Текст сообщения...*'])->label(false)?>
+                </div>
+                <div id="contactPage" class="agre_wrap col-12">
+                    <label class="agre_lable flex">
+                                <span class="check_wrap">
+                                    <?= $form->field($model,'agree',[
+                                        'template' => '{input}',
+                                        'options' => [
+                                            'tag' => false,
+                                        ],
+                                    ])->checkbox(['label' => false,'checked ' => true,'class' => 'form_check', 'data' => ['id' => '#contactPage'],'style' => 'display:none'],false)?>
+                                    <em class="check_mask flex justify-content-center align-items-center">
+                                        <svg class="checkedImg" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 512 512">
+                                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/>
+                                        </svg>
+                                    </em>
+                                </span>
+                        <a class="check_text">
+                            Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
+                            персональных данных, в соответствии с Федеральным законом от 27.07.2006
+                            года №152-ФЗ «О персональных данных», на условиях и для
+                            целей, определенных в Согласии на обработку персональных данных
+                        </a>
+                    </label>
+                </div>
+                <div class="col-12">
+                    <?= Html::submitButton('Отправить', ['class' => 'btn_form','data' => ['id' => '#contactPage']]) ?>
+                </div>
+            </div>
+            <?ActiveForm::end()?>
+            <?Pjax::end();?>
         </div>
         <div class="contactWrap col-12 col-lg-5 col-xl-4">
             <div class="contactBlock">

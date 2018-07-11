@@ -12,7 +12,7 @@ html{
 
 $temlatePath: '..';
 $mainBackgroundColor: #ffffff;
-$mobileMenuOpenColor: #316d2f;
+$mobileMenuOpenColor: #6bc9f2;
 
 @font-face {
   font-family: Montserrat-Bold;
@@ -280,6 +280,7 @@ body{
   position: inherit;
 }
 #mess_block{
+  @extend .justify-content-center;
   padding: 30px 15px;
   .messBlock__button{
     @extend .f_Montserrat-SemiBold,.fs_14,.fls_07,.fc_fff;
@@ -1402,5 +1403,24 @@ body{
         padding-left: 10px;
       }
     }
+  }
+}
+.form-group{
+  position: relative;
+  &.has-error{
+    .site_input{
+      color: #f8160f;
+      border-color: #f8160f;
+      &::placeholder{
+        color: #f8160f;
+      }
+    }
+  }
+  .help-block{
+    font-size: 12px;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    color: #f8160f;
   }
 }

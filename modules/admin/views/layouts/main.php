@@ -46,6 +46,8 @@ AdminAsset::register($this);
                 ['label' => 'Слайдер', 'url' => ['/admin/slides/index']],
                 ['label' => 'Галлереи', 'url' => ['/admin/gallery/index']],
                 ['label' => 'Занятия','url' => ['/admin/aducate/index']],
+                ['label' => 'Преподаватели','url' => ['/admin/teachers/index']],
+                ['label' => 'Расписание','url' => ['/admin/date-table/index']],
                 Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
                 ) : (

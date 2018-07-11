@@ -16,6 +16,8 @@ use app\models\User;
 use app\models\UserResetPasswordForm;
 use app\models\UserNewPasswordForm;
 use yii\widgets\ActiveForm;
+use app\models\DateTable;
+use app\models\ContactForm;
 
 class SiteController extends AppController
 {
@@ -68,7 +70,7 @@ class SiteController extends AppController
      */
     public function actionIndex()
     {
-        $this->setMetaTags('Главная','доставка суши, роллов на дом и в офис.');
+        $this->setMetaTags('Главная','Лесенка знаний');
         return $this->render('index');
     }
 
@@ -91,15 +93,15 @@ class SiteController extends AppController
      */
     public function actionContact()
     {
-        $this->setMetaTags('Контакты','доставка суши, роллов на дом и в офис.');
-//        $model = new ContactForm();
-//        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-//            Yii::$app->session->setFlash('contactFormSubmitted');
-//
+        $this->setMetaTags('Контакты','Лесенка знаний');
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            $model = new ContactForm();
+
 //            return $this->refresh();
-//        }
+        }
         return $this->render('contact', [
-            //'model' => $model,
+            'model' => $model,
         ]);
     }
 
@@ -122,7 +124,7 @@ class SiteController extends AppController
                 ->orderBy(['create_date'=>SORT_DESC])
                 ->asArray()
                 ->all();
-        $this->setMetaTags('Гостевая книга','доставка суши, роллов на дом и в офис.');
+        $this->setMetaTags('Гостевая книга','Лесенка знаний');
 
         $model = new Review();
         if(!Yii::$app->user->isGuest){
@@ -155,6 +157,12 @@ class SiteController extends AppController
         else {
             throw new HttpException(404 ,'Page not found');
         }
+    }
+
+    public function actionTable(){
+        $this->setMetaTags('Расписание занятий','Расписание занятий');
+        $table = DateTable::find()->with(['teacher','aducate'])->asArray()->all();
+        return $this->render('table',['table' => $table]);
     }
 
     public function actionSignup()
